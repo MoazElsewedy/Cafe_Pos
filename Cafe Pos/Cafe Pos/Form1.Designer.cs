@@ -30,10 +30,15 @@
         {
             this.Top_panel = new System.Windows.Forms.Panel();
             this.ChooseTable_but = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.search_but = new System.Windows.Forms.Button();
             this.search_txtbox = new System.Windows.Forms.TextBox();
             this.Nav_panel = new System.Windows.Forms.Panel();
+            this.Materials_but = new System.Windows.Forms.Button();
+            this.KitchenStok_but = new System.Windows.Forms.Button();
+            this.stock1 = new Cafe_Pos.Stock();
+            this.kitchen_Stock1 = new Cafe_Pos.Kitchen_Stock();
+            this.KitchenStock_but = new Cafe_Pos.Stock();
+            this.suppier1 = new Cafe_Pos.Suppier();
+            this.material1 = new Cafe_Pos.Material();
             this.Stock_but = new System.Windows.Forms.Button();
             this.Reports_but = new System.Windows.Forms.Button();
             this.Order_but = new System.Windows.Forms.Button();
@@ -42,12 +47,8 @@
             this.Customer_but = new System.Windows.Forms.Button();
             this.Sup_but = new System.Windows.Forms.Button();
             this.Home_but = new System.Windows.Forms.Button();
-            this.KitchenStok_but = new System.Windows.Forms.Button();
-            this.stock1 = new Cafe_Pos.Stock();
-            this.kitchen_Stock1 = new Cafe_Pos.Kitchen_Stock();
-            this.KitchenStock_but = new Cafe_Pos.Stock();
-            this.suppier1 = new Cafe_Pos.Suppier();
-            this.Materials_but = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.search_but = new System.Windows.Forms.Button();
             this.Top_panel.SuspendLayout();
             this.Nav_panel.SuspendLayout();
             this.SuspendLayout();
@@ -83,37 +84,6 @@
             this.ChooseTable_but.Text = "Select Table";
             this.ChooseTable_but.UseVisualStyleBackColor = false;
             // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
-            this.button5.Image = global::Cafe_Pos.Properties.Resources.setting;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.Location = new System.Drawing.Point(1786, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(113, 94);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Settings";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // search_but
-            // 
-            this.search_but.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.search_but.FlatAppearance.BorderSize = 0;
-            this.search_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.search_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.search_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.search_but.Image = global::Cafe_Pos.Properties.Resources.search;
-            this.search_but.Location = new System.Drawing.Point(612, 56);
-            this.search_but.Name = "search_but";
-            this.search_but.Size = new System.Drawing.Size(37, 38);
-            this.search_but.TabIndex = 1;
-            this.search_but.UseVisualStyleBackColor = true;
-            // 
             // search_txtbox
             // 
             this.search_txtbox.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -142,6 +112,78 @@
             this.Nav_panel.Name = "Nav_panel";
             this.Nav_panel.Size = new System.Drawing.Size(200, 933);
             this.Nav_panel.TabIndex = 2;
+            // 
+            // Materials_but
+            // 
+            this.Materials_but.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Materials_but.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.Materials_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Materials_but.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Materials_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
+            this.Materials_but.Location = new System.Drawing.Point(28, 554);
+            this.Materials_but.Name = "Materials_but";
+            this.Materials_but.Size = new System.Drawing.Size(136, 86);
+            this.Materials_but.TabIndex = 11;
+            this.Materials_but.Text = "Materials";
+            this.Materials_but.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Materials_but.UseVisualStyleBackColor = false;
+            // 
+            // KitchenStok_but
+            // 
+            this.KitchenStok_but.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.KitchenStok_but.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.KitchenStok_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.KitchenStok_but.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KitchenStok_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
+            this.KitchenStok_but.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.KitchenStok_but.Location = new System.Drawing.Point(96, 452);
+            this.KitchenStok_but.Name = "KitchenStok_but";
+            this.KitchenStok_but.Size = new System.Drawing.Size(95, 96);
+            this.KitchenStok_but.TabIndex = 10;
+            this.KitchenStok_but.Text = "Kithcen Stock";
+            this.KitchenStok_but.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.KitchenStok_but.UseVisualStyleBackColor = false;
+            this.KitchenStok_but.Click += new System.EventHandler(this.KitchenStok_but_Click);
+            // 
+            // stock1
+            // 
+            this.stock1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
+            this.stock1.Location = new System.Drawing.Point(197, 101);
+            this.stock1.Name = "stock1";
+            this.stock1.Size = new System.Drawing.Size(1702, 933);
+            this.stock1.TabIndex = 21;
+            // 
+            // kitchen_Stock1
+            // 
+            this.kitchen_Stock1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
+            this.kitchen_Stock1.Location = new System.Drawing.Point(197, 100);
+            this.kitchen_Stock1.Name = "kitchen_Stock1";
+            this.kitchen_Stock1.Size = new System.Drawing.Size(1702, 933);
+            this.kitchen_Stock1.TabIndex = 20;
+            // 
+            // KitchenStock_but
+            // 
+            this.KitchenStock_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
+            this.KitchenStock_but.Location = new System.Drawing.Point(197, 100);
+            this.KitchenStock_but.Name = "KitchenStock_but";
+            this.KitchenStock_but.Size = new System.Drawing.Size(1705, 933);
+            this.KitchenStock_but.TabIndex = 19;
+            // 
+            // suppier1
+            // 
+            this.suppier1.BackColor = System.Drawing.Color.White;
+            this.suppier1.Location = new System.Drawing.Point(200, 100);
+            this.suppier1.Name = "suppier1";
+            this.suppier1.Size = new System.Drawing.Size(1702, 933);
+            this.suppier1.TabIndex = 3;
+            // 
+            // material1
+            // 
+            this.material1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
+            this.material1.Location = new System.Drawing.Point(197, 101);
+            this.material1.Name = "material1";
+            this.material1.Size = new System.Drawing.Size(1702, 933);
+            this.material1.TabIndex = 22;
             // 
             // Stock_but
             // 
@@ -273,69 +315,36 @@
             this.Home_but.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Home_but.UseVisualStyleBackColor = false;
             // 
-            // KitchenStok_but
+            // button5
             // 
-            this.KitchenStok_but.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.KitchenStok_but.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.KitchenStok_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.KitchenStok_but.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KitchenStok_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
-            this.KitchenStok_but.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.KitchenStok_but.Location = new System.Drawing.Point(96, 452);
-            this.KitchenStok_but.Name = "KitchenStok_but";
-            this.KitchenStok_but.Size = new System.Drawing.Size(95, 96);
-            this.KitchenStok_but.TabIndex = 10;
-            this.KitchenStok_but.Text = "Kithcen Stock";
-            this.KitchenStok_but.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.KitchenStok_but.UseVisualStyleBackColor = false;
-            this.KitchenStok_but.Click += new System.EventHandler(this.KitchenStok_but_Click);
+            this.button5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
+            this.button5.Image = global::Cafe_Pos.Properties.Resources.setting;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button5.Location = new System.Drawing.Point(1786, 3);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(113, 94);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Settings";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button5.UseVisualStyleBackColor = false;
             // 
-            // stock1
+            // search_but
             // 
-            this.stock1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
-            this.stock1.Location = new System.Drawing.Point(197, 101);
-            this.stock1.Name = "stock1";
-            this.stock1.Size = new System.Drawing.Size(1702, 933);
-            this.stock1.TabIndex = 21;
-            // 
-            // kitchen_Stock1
-            // 
-            this.kitchen_Stock1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
-            this.kitchen_Stock1.Location = new System.Drawing.Point(197, 100);
-            this.kitchen_Stock1.Name = "kitchen_Stock1";
-            this.kitchen_Stock1.Size = new System.Drawing.Size(1702, 933);
-            this.kitchen_Stock1.TabIndex = 20;
-            // 
-            // KitchenStock_but
-            // 
-            this.KitchenStock_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
-            this.KitchenStock_but.Location = new System.Drawing.Point(197, 100);
-            this.KitchenStock_but.Name = "KitchenStock_but";
-            this.KitchenStock_but.Size = new System.Drawing.Size(1705, 933);
-            this.KitchenStock_but.TabIndex = 19;
-            // 
-            // suppier1
-            // 
-            this.suppier1.BackColor = System.Drawing.Color.White;
-            this.suppier1.Location = new System.Drawing.Point(200, 100);
-            this.suppier1.Name = "suppier1";
-            this.suppier1.Size = new System.Drawing.Size(1702, 933);
-            this.suppier1.TabIndex = 3;
-            // 
-            // Materials_but
-            // 
-            this.Materials_but.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Materials_but.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.Materials_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Materials_but.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Materials_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(159)))), ((int)(((byte)(158)))));
-            this.Materials_but.Location = new System.Drawing.Point(28, 554);
-            this.Materials_but.Name = "Materials_but";
-            this.Materials_but.Size = new System.Drawing.Size(136, 86);
-            this.Materials_but.TabIndex = 11;
-            this.Materials_but.Text = "Materials";
-            this.Materials_but.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Materials_but.UseVisualStyleBackColor = false;
+            this.search_but.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.search_but.FlatAppearance.BorderSize = 0;
+            this.search_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.search_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.search_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.search_but.Image = global::Cafe_Pos.Properties.Resources.search;
+            this.search_but.Location = new System.Drawing.Point(612, 56);
+            this.search_but.Name = "search_but";
+            this.search_but.Size = new System.Drawing.Size(37, 38);
+            this.search_but.TabIndex = 1;
+            this.search_but.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -344,6 +353,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.Controls.Add(this.material1);
             this.Controls.Add(this.stock1);
             this.Controls.Add(this.kitchen_Stock1);
             this.Controls.Add(this.KitchenStock_but);
@@ -383,6 +393,7 @@
         private System.Windows.Forms.Button KitchenStok_but;
         private Stock stock1;
         private System.Windows.Forms.Button Materials_but;
+        private Material material1;
     }
 }
 
